@@ -87,7 +87,7 @@ namespace cicd.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK);
         }
-
+        //this is for disposing  Hello
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -101,5 +101,9 @@ namespace cicd.Controllers
         {
             return db.Employee.Count(e => e.EmployeeID == id) > 0;
         }
+    }
+    public class Hello
+    {
+
     }
 }
